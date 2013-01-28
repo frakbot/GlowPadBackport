@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">GlowPadSample</string>
+    <string name="btn_toggle_multiplier">Toggle GlowPad mult</string>
+</resources>

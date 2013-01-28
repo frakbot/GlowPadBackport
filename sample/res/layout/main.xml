@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+    <Button
+            android:id="@+id/btn_toggle_padmult"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:text="@string/btn_toggle_multiplier"/>
+
+    <net.sebastianopoggi.ui.GlowPadBackport.GlowPadView
+            android:id="@+id/incomingCallWidget"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@id/btn_toggle_padmult"
+            android:layout_marginTop="-10dp"
+            android:layout_marginBottom="-46dp"
+            android:background="@android:color/black"
+            android:visibility="visible"
+            android:gravity="top"
+
+            app:targetDrawables="@array/incoming_call_widget_2way_targets"
+            app:handleDrawable="@drawable/ic_in_call_touch_handle"
+            app:innerRadius="@dimen/glowpadview_inner_radius"
+            app:outerRadius="@dimen/glowpadview_target_placement_radius"
+            app:outerRingDrawable="@drawable/ic_lockscreen_outerring"
+            app:snapMargin="@dimen/glowpadview_snap_margin"
+            app:vibrationDuration="20"
+            app:feedbackCount="1"
+            app:glowRadius="@dimen/glowpadview_glow_radius"
+            app:pointDrawable="@drawable/ic_lockscreen_glowdot"/>
+
+</RelativeLayout>
