@@ -28,13 +28,11 @@ In order to use the `GlowPadView` in your project, follow these steps:
 
   1. Reference the GlowPadView in an XML layout (or initialize it from code)
 
-    <?xml version="1.0" encoding="utf-8"?>
-
     <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
                     xmlns:app="http://schemas.android.com/apk/res-auto"
                     android:layout_width="fill_parent"
                     android:layout_height="fill_parent">
-
+    
         <net.sebastianopoggi.ui.GlowPadBackport.GlowPadView
                 android:id="@+id/incomingCallWidget"
                 android:layout_width="fill_parent"
