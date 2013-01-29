@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/library/GlowPadBackport.iml" filepath="$PROJECT_DIR$/library/GlowPadBackport.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sample/GlowPadSample.iml" filepath="$PROJECT_DIR$/sample/GlowPadSample.iml" />
+      <module fileurl="file://$PROJECT_DIR$/NineOldAndroids/library/NineOldAndroids.iml" filepath="$PROJECT_DIR$/NineOldAndroids/library/NineOldAndroids.iml" />
+    </modules>
+  </component>
+</project>
+
