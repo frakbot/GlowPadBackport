@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <style name="InCallEndButton">
-        <item name="android:layout_width">0dip</item>
-        <item name="android:layout_height">@dimen/in_call_end_button_height</item>
-        <item name="android:layout_weight">1</item>
-    </style>
-</resources>

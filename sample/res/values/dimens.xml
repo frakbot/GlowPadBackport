@@ -12,13 +12,12 @@
     <!-- Default distance from each snap target that GlowPadView considers a "hit" -->
     <dimen name="glowpadview_inner_radius">15dip</dimen>
 
-    <dimen name="in_call_end_button_height">74dp</dimen>
-
     <!-- Size of lockscreen outerring on unsecure unlock LockScreen -->
     <dimen name="keyguard_lockscreen_outerring_diameter">270dp</dimen>
 
     <!-- Circle size for incoming call widget's each item. -->
     <dimen name="incoming_call_widget_circle_size">94dp</dimen>
+
     <!-- Margin used for incoming call widget's icon for each item.
          This should be same as "(incoming_call_widget_circle_size - icon_size)/2".
          Right now answer/decline/reject icons have 38dp width/height.
