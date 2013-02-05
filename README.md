@@ -28,6 +28,7 @@ In order to use the `GlowPadView` in your project, follow these steps:
 
   1. Reference the GlowPadView in an XML layout (or initialize it from code)
 
+    ```xml
     <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
                     xmlns:app="http://schemas.android.com/apk/res-auto"
                     android:layout_width="fill_parent"
@@ -55,6 +56,7 @@ In order to use the `GlowPadView` in your project, follow these steps:
                 app:pointDrawable="@drawable/ic_lockscreen_glowdot"/>
 
     </RelativeLayout>
+    ```
 
   2. ????
   3. Profit!
