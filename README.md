@@ -17,7 +17,9 @@ Google decided to only provide a private implementation of that View in AOSP. It
 
 ## Installation
 
-Clone the repository on your computer, then reference `GlowPadBackport` from your project. Already supplied is the [IntelliJ IDEA][1] project file for the library project. Importing in Eclipse should be just as easy, using the "create project from existing sources" function.
+Clone the repository on your computer, then reference `GlowPadBackport` from your project. The old IntelliJ IDEA and Eclipse projects have been
+discontinued, and the library has been moved to the new Gradle-based
+build system, and [Android Studio][1].
 
 Note that `GlowPadBackport` relies on [`NineOldAndroids`][2], an awesome backport of the Android 3+ Animation APIs made by [Jake Wharton][3]. It is referenced as a submodule here; you might need to initialize the submodule after cloning, depending on your setup.
 
@@ -26,7 +28,22 @@ Note that `GlowPadBackport` relies on [`NineOldAndroids`][2], an awesome backpor
 
 In order to use the `GlowPadView` in your project, follow these steps:
 
-  1. Reference the GlowPadView in an XML layout (or initialize it from code)
+  1. Ensure you have the library in your app's `settings.gradle` file, eg.:
+
+  ```java
+  include ':MySuperNiceApp'
+  include ':libs:GlowPadBackport'
+  ```
+
+  2. Add the dependency to your app's module `build.gradle` file, eg.:
+
+  ```java
+  dependencies {
+    compile project(':GlowPadBackport')
+  }
+  ```
+
+  3. Reference the GlowPadView in an XML layout (or initialize it from code)
 
     ```xml
     <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -88,7 +105,7 @@ You can find the `GlowPadSample` app on the [Google Play Store][4].
 
 
 
-   [1]: http://www.jetbrains.com/idea/
+   [1]: http://developer.android.com/sdk/installing/studio.html
    [2]: http://www.nineoldandroids.com/
    [3]: https://github.com/JakeWharton
    [4]: http://play.google.com/store/apps/details?id=net.sebastianopoggi.samples.ui.GlowPadSample
