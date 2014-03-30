@@ -21,6 +21,10 @@ Clone the repository on your computer, then reference `GlowPadBackport` from you
 discontinued, and the library has been moved to the new Gradle-based build system, and [Android Studio][1].
 You can of course continue to use this library in IntelliJ IDEA, but you'll have to build it using Gradle.
 
+Before being able to build the project, you will need to rename the `keystore.properties.example` and `local.properties.example`
+files in the repo root, removing the `.example` suffix. Please note that you _will_ need to provide valid values in
+both files, in place of the placeholders, before being able to complete a build.
+
 Note that `GlowPadBackport` relies on [`NineOldAndroids`][2], an awesome backport of the Android 3+ Animation APIs made by [Jake Wharton][3]. It is referenced as a submodule here; you might need to initialize the submodule after cloning, depending on your setup.
 
 
