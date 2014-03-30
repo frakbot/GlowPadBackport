@@ -34,14 +34,14 @@ In order to use the `GlowPadView` in your project, follow these steps:
 
   1. Ensure you have the library in your app's `settings.gradle` file, eg.:
 
-  ```java
+  ```groovy
   include ':MySuperNiceApp'
   include ':libs:GlowPadBackport'
   ```
 
   2. Add the dependency to your app's module `build.gradle` file, eg.:
 
-  ```java
+  ```groovy
   dependencies {
     compile project(':GlowPadBackport')
   }
@@ -86,6 +86,8 @@ In order to use the `GlowPadView` in your project, follow these steps:
 ## Sample app
 
 You can find the `GlowPadSample` app on the [Google Play Store][4].
+
+Please note that **the demo app has not been updated for v2.0** (and probably never will).
 
 [![GlowPadSample on Google Play Store](http://developer.android.com/images/brand/en_generic_rgb_wo_60.png)][4]
 
