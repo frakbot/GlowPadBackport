@@ -17,9 +17,9 @@ Google decided to only provide a private implementation of that View in AOSP. It
 
 ## Installation
 
-Clone the repository on your computer, then reference `GlowPadBackport` from your project. The old IntelliJ IDEA and Eclipse projects have been
-discontinued, and the library has been moved to the new Gradle-based
-build system, and [Android Studio][1].
+Clone the repository on your computer, then reference `GlowPadBackport` from your project. The old IntelliJ IDEA and Eclipse-style projects have been
+discontinued, and the library has been moved to the new Gradle-based build system, and [Android Studio][1].
+You can of course continue to use this library in IntelliJ IDEA, but you'll have to build it using Gradle.
 
 Note that `GlowPadBackport` relies on [`NineOldAndroids`][2], an awesome backport of the Android 3+ Animation APIs made by [Jake Wharton][3]. It is referenced as a submodule here; you might need to initialize the submodule after cloning, depending on your setup.
 
