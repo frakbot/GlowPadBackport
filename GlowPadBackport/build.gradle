@@ -1,18 +1,16 @@
 apply plugin: 'android-library'
+apply from: '../maven_push.gradle'
 
 android {
     compileSdkVersion 19
     buildToolsVersion "19.0.3"
 
-    def Properties versionProps = new Properties()
-    versionProps.load(new FileInputStream(file('version.properties')))
-
     defaultConfig {
         minSdkVersion 4
         targetSdkVersion 19
 
-        versionName versionProps['name']
-        versionCode versionProps['code'].toInteger()
+        versionName VERSION_NAME
+        versionCode Integer.parseInt(VERSION_CODE)
     }
 
     compileOptions {
@@ -45,7 +43,7 @@ android {
         publicBeta {
             runProguard false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), file('proguard-rules.txt')
-            versionNameSuffix " " + versionProps['betaNumber']
+            versionNameSuffix " " + VERSION_BETANUMBER
         }
 
         publicDebug.initWith(buildTypes.publicBeta)
@@ -53,7 +51,7 @@ android {
             debuggable true
             runProguard false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), file('proguard-rules.txt')
-            versionNameSuffix " Debug " + versionProps['betaNumber']
+            versionNameSuffix " Debug " + VERSION_BETANUMBER
         }
     }
 }
