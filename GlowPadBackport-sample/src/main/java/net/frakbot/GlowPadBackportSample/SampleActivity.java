@@ -1,12 +1,12 @@
-package net.sebastianopoggi.ui.GlowPadBackportSample;
+package net.frakbot.GlowPadBackportSample;
 
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
-import net.sebastianopoggi.samples.ui.GlowPadSample.R;
-import net.sebastianopoggi.ui.GlowPadBackport.GlowPadView;
+import net.frakbot.samples.ui.GlowPadSample.R;
+import net.frakbot.glowpadbackport.GlowPadView;
 
 public class SampleActivity extends Activity {
     /** Called when the activity is first created. */

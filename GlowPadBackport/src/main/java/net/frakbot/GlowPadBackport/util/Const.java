@@ -1,4 +1,4 @@
-package net.sebastianopoggi.ui.GlowPadBackport.util;
+package net.frakbot.glowpadbackport.util;
 
 import android.os.Build;
 

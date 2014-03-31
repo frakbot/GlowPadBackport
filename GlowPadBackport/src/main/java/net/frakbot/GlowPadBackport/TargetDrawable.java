@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package net.sebastianopoggi.ui.GlowPadBackport;
+package net.frakbot.glowpadbackport;
 
 import android.content.res.Resources;
 import android.graphics.Canvas;

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package net.sebastianopoggi.ui.GlowPadBackport;
+package net.frakbot.glowpadbackport;
 
 import android.annotation.TargetApi;
 import android.content.ComponentName;
@@ -40,8 +40,8 @@ import android.view.accessibility.AccessibilityManager;
 import com.nineoldandroids.animation.Animator;
 import com.nineoldandroids.animation.AnimatorListenerAdapter;
 import com.nineoldandroids.animation.ValueAnimator;
-import net.sebastianopoggi.ui.GlowPadBackport.util.Const;
-import net.sebastianopoggi.ui.GlowPadBackport.util.TimeInterpolator;
+import net.frakbot.glowpadbackport.util.Const;
+import net.frakbot.glowpadbackport.util.TimeInterpolator;
 
 import java.util.ArrayList;
 
@@ -220,7 +220,8 @@ public class GlowPadView extends View {
         mSnapMargin = a.getDimension(R.styleable.GlowPadView_snapMargin, mSnapMargin);
         mFirstItemOffset = (float) Math.toRadians(
             a.getFloat(R.styleable.GlowPadView_firstItemOffset,
-                       (float) Math.toDegrees(mFirstItemOffset)));
+                       (float) Math.toDegrees(mFirstItemOffset))
+        );
         mVibrationDuration = a.getInt(R.styleable.GlowPadView_vibrationDuration,
                                       mVibrationDuration);
         mFeedbackCount = a.getInt(R.styleable.GlowPadView_feedbackCount,
@@ -733,7 +734,8 @@ public class GlowPadView extends View {
                                                mPointCloud.waveManager.setRadius(0.0f);
                                                mPointCloud.waveManager.setAlpha(0.0f);
                                            }
-                                       }));
+                                       }
+        ));
         mWaveAnimations.start();
     }
 

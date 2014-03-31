@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package net.sebastianopoggi.ui.GlowPadBackport;
+package net.frakbot.glowpadbackport;
 
-import net.sebastianopoggi.ui.GlowPadBackport.util.TimeInterpolator;
+import net.frakbot.glowpadbackport.util.TimeInterpolator;
 
 class Ease {
     private static final float DOMAIN = 1.0f;

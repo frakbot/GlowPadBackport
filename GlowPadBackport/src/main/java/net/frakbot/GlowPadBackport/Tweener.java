@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package net.sebastianopoggi.ui.GlowPadBackport;
+package net.frakbot.glowpadbackport;
 
 import android.util.Log;
 import com.nineoldandroids.animation.Animator;
@@ -23,7 +23,7 @@ import com.nineoldandroids.animation.AnimatorListenerAdapter;
 import com.nineoldandroids.animation.ObjectAnimator;
 import com.nineoldandroids.animation.PropertyValuesHolder;
 import com.nineoldandroids.animation.ValueAnimator.AnimatorUpdateListener;
-import net.sebastianopoggi.ui.GlowPadBackport.util.TimeInterpolator;
+import net.frakbot.glowpadbackport.util.TimeInterpolator;
 
 import java.util.ArrayList;
 import java.util.HashMap;
