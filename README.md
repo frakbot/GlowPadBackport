@@ -114,4 +114,4 @@ Please note that **the demo app has not been updated for v2.0** (and probably ne
    [1]: http://developer.android.com/sdk/installing/studio.html
    [2]: http://www.nineoldandroids.com/
    [3]: https://github.com/JakeWharton
-   [4]: http://play.google.com/store/apps/details?id=net.sebastianopoggi.samples.ui.GlowPadSample
+   [4]: http://play.google.com/store/apps/details?id=net.frakbot.glowpadbackportsample
