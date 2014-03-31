@@ -5,21 +5,13 @@
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent">
 
-    <Button
-            android:id="@+id/btn_toggle_padmult"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:text="@string/btn_toggle_multiplier"/>
-
-    <net.sebastianopoggi.ui.GlowPadBackport.GlowPadView
+    <net.frakbot.glowpadbackport.GlowPadView
             android:id="@+id/incomingCallWidget"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
-            android:layout_below="@id/btn_toggle_padmult"
+            android:layout_below="@+id/btn_toggle_padmult"
             android:layout_marginTop="-10dp"
             android:layout_marginBottom="-46dp"
-            android:background="@android:color/black"
             android:visibility="visible"
             android:gravity="top"
 
@@ -33,5 +25,12 @@
             app:feedbackCount="1"
             app:glowRadius="@dimen/glowpadview_glow_radius"
             app:pointDrawable="@drawable/ic_lockscreen_glowdot"/>
+
+    <Button
+            android:id="@+id/btn_toggle_padmult"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:text="@string/btn_toggle_multiplier"/>
 
 </RelativeLayout>
