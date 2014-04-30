@@ -1,7 +1,7 @@
 GlowPadBackport
 ===============
 
-A backport of the Android 4.2 GlowPadView that works on the SDK on API levels 4+.
+**A backport of the Android 4.2 GlowPadView that works on the SDK on API levels 4+.**
 
 It is heavily based upon Google's own internal implementation of the GlowPadView found in Android 4.2 Jelly Bean, but ported to be able to run on the Android SDK up from version 1.6 (API level 4, codename Donut). It uses Reflection in a couple of method calls to access some hidden APIs, so it might break on some Android version, or in the future. I tried limiting the usage of Reflection as much as possible, but those three methods did not have any alternatives.
 
@@ -10,9 +10,13 @@ I'm releasing my own code under the same Apache 2.0 license the underlying Andro
 
 ## What is a GlowPad?
 
-The GlowPadView is that View that Google uses in Android 4.1 and 4.2 (and, in a slightly different flavour, on Android 4.0 as well) on both the insecure lockscreen and the Incoming call Activity. It's the circular grid of dots, with a central handle that the user can grab to various customizable targets.
+The `GlowPadView` is the view that Google uses in Android 4.1 and 4.2 (and, in a slightly different flavour, on Android 4.0 as well) on both the insecure lockscreen and the Incoming call Activity. It's the circular grid of dots, with a central handle that the user can grab to various customizable targets.
 
-Google decided to only provide a private implementation of that View in AOSP. It's not an SDK-facing View, it has lots of internal APIs references, and doesn't work in older versions of Android. What I have done is I have rewritten part of the code to work on Android SDK versions starting with Android 1.6 Donut, which is to mean it runs pretty much on any hardware out there. Of course performance is not going to be buttery smooth on older OS versions if the hardware is not up to it. Still, it can work decently even on underpowered hardware such as the i'm Watch Android smartwatch (you have to decrease the points count multiplier to 3-4 from the default of 8 thou). I also exposed a couple more functions that aren't available on the AOSP internal version, such as the ability to change the points count. This means you can use the GlowPadView in any of your apps, and create custom Holo-like lockscreens for older versions of Android.
+Google decided to only provide a private implementation of that view in AOSP. It's not an SDK-facing view, it has lots of internal APIs references, and doesn't work in older versions of Android. What I have done is I have rewritten part of the code to work on Android SDK versions starting with Android 1.6 Donut, which is to mean it runs pretty much on any hardware out there.
+
+Of course performance is not going to be buttery smooth on older OS versions if the hardware is not up to it. Still, it can work decently even on underpowered hardware such as the [i'm Watch](http://www.imsmart.com/en/i-m-watch/overview) Android smartwatch (you have to decrease the points count multiplier to 3-4 from the default of 8 thou).
+
+I also exposed a couple more functions that aren't available on the AOSP internal version, such as the ability to change the points count. This means you can use the `GlowPadView` in any of your apps, and create custom Holo-like lockscreens for older versions of Android.
 
 
 ## Usage
@@ -38,7 +42,7 @@ In order to use the `GlowPadView` in your project, follow these steps:
   }
   ```
 
-  3. Reference the GlowPadView in an XML layout (or initialize it from code)
+  3. Reference the GlowPadView in an XML layout (or initialise it from code)
 
     ```xml
     <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
