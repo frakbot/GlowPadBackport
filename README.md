@@ -15,19 +15,6 @@ The GlowPadView is that View that Google uses in Android 4.1 and 4.2 (and, in a 
 Google decided to only provide a private implementation of that View in AOSP. It's not an SDK-facing View, it has lots of internal APIs references, and doesn't work in older versions of Android. What I have done is I have rewritten part of the code to work on Android SDK versions starting with Android 1.6 Donut, which is to mean it runs pretty much on any hardware out there. Of course performance is not going to be buttery smooth on older OS versions if the hardware is not up to it. Still, it can work decently even on underpowered hardware such as the i'm Watch Android smartwatch (you have to decrease the points count multiplier to 3-4 from the default of 8 thou). I also exposed a couple more functions that aren't available on the AOSP internal version, such as the ability to change the points count. This means you can use the GlowPadView in any of your apps, and create custom Holo-like lockscreens for older versions of Android.
 
 
-## Installation
-
-Clone the repository on your computer, then reference `GlowPadBackport` from your project. The old IntelliJ IDEA and Eclipse-style projects have been
-discontinued, and the library has been moved to the new Gradle-based build system, and [Android Studio][1].
-You can of course continue to use this library in IntelliJ IDEA, but you'll have to build it using Gradle.
-
-Before being able to build the project, you will need to rename the `keystore.properties.example` and `local.properties.example`
-files in the repo root, removing the `.example` suffix. Please note that you _will_ need to provide valid values in
-both files, in place of the placeholders, before being able to complete a build.
-
-Note that `GlowPadBackport` relies on [`NineOldAndroids`][2], an awesome backport of the Android 3+ Animation APIs made by [Jake Wharton][3]. It is referenced as a submodule here; you might need to initialize the submodule after cloning, depending on your setup.
-
-
 ## Usage
 
 In order to use the `GlowPadView` in your project, follow these steps:
@@ -94,6 +81,19 @@ You can find the `GlowPadSample` app on the [Google Play Store][4].
 Please note that **the demo app has not been updated for v2.0** on the Play Store (and probably never will). You can try out the v2.0 demo from the [**Releases** section](https://github.com/frakbot/GlowPadBackport/releases/tag/v2.0.0) of this repo.
 
 [![GlowPadSample on Google Play Store](http://developer.android.com/images/brand/en_generic_rgb_wo_60.png)][4]
+
+
+## Building from source
+
+Clone the repository on your computer. The old IntelliJ IDEA and Eclipse-style projects have been
+discontinued, and the library has been moved to the new Gradle-based build system, and [Android Studio][1].
+You can of course continue to use this library in IntelliJ IDEA, but you'll have to build it using Gradle.
+
+Before being able to build the project, you will need to rename the `keystore.properties.example` and `local.properties.example`
+files in the repo root, removing the `.example` suffix. Please note that you _will_ need to provide valid values in
+both files, in place of the placeholders, before being able to complete a build.
+
+Note that `GlowPadBackport` relies on [`NineOldAndroids`][2], an awesome backport of the Android 3+ Animation APIs made by [Jake Wharton][3]. It is referenced as a submodule here; you might need to initialize the submodule after cloning, depending on your setup.
 
 
 ## License
