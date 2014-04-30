@@ -7,6 +7,8 @@ It is heavily based upon Google's own internal implementation of the GlowPadView
 
 I'm releasing my own code under the same Apache 2.0 license the underlying Android code is licensed under. Android code is written by Google, and licensed under that same Apache 2.0 license.
 
+**GlowPadBackport** relies on [`NineOldAndroids`][2], an awesome backport of the Android 3+ Animation APIs made by [Jake Wharton][3].
+
 
 ## What is a GlowPad?
 
@@ -96,8 +98,6 @@ You can of course continue to use this library in IntelliJ IDEA, but you'll have
 Before being able to build the project, you will need to rename the `keystore.properties.example` and `local.properties.example`
 files in the repo root, removing the `.example` suffix. Please note that you _will_ need to provide valid values in
 both files, in place of the placeholders, before being able to complete a build.
-
-Note that `GlowPadBackport` relies on [`NineOldAndroids`][2], an awesome backport of the Android 3+ Animation APIs made by [Jake Wharton][3]. It is referenced as a submodule here; you might need to initialize the submodule after cloning, depending on your setup.
 
 
 ## License
