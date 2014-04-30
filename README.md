@@ -32,18 +32,22 @@ Note that `GlowPadBackport` relies on [`NineOldAndroids`][2], an awesome backpor
 
 In order to use the `GlowPadView` in your project, follow these steps:
 
-  1. Ensure you have the library in your app's `settings.gradle` file, eg.:
+  1. Ensure you have the Maven Central repository configured in your `build.gradle` file, eg.:
 
   ```groovy
-  include ':MySuperNiceApp'
-  include ':libs:GlowPadBackport'
+  repositories {
+      mavenCentral()
+  }
   ```
+  
+  This has to be in your app module's `build.gradle` or in the project's top-level `build.gradle` file. Android Studio puts it into the top-level file by default.
 
   2. Add the dependency to your app's module `build.gradle` file, eg.:
 
   ```groovy
   dependencies {
-    compile project(':GlowPadBackport')
+      // Your other dependencies...
+      compile 'net.frakbot.glowpadbackport:glowpadbackport:2.1.0'
   }
   ```
 
@@ -87,14 +91,14 @@ In order to use the `GlowPadView` in your project, follow these steps:
 
 You can find the `GlowPadSample` app on the [Google Play Store][4].
 
-Please note that **the demo app has not been updated for v2.0** (and probably never will).
+Please note that **the demo app has not been updated for v2.0** on the Play Store (and probably never will). You can try out the v2.0 demo from the [**Releases** section](https://github.com/frakbot/GlowPadBackport/releases/tag/v2.0.0) of this repo.
 
 [![GlowPadSample on Google Play Store](http://developer.android.com/images/brand/en_generic_rgb_wo_60.png)][4]
 
 
 ## License
 
-    Copyright 2013 Sebastiano Poggi
+    Copyright 2013-4 Sebastiano Poggi
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
