@@ -52,7 +52,7 @@ In order to use the `GlowPadView` in your project, follow these steps:
                     android:layout_width="fill_parent"
                     android:layout_height="fill_parent">
     
-        <net.sebastianopoggi.ui.GlowPadBackport.GlowPadView
+        <net.frakbot.glowpadbackport.GlowPadView
                 android:id="@+id/incomingCallWidget"
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
