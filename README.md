@@ -40,7 +40,7 @@ In order to use the `GlowPadView` in your project, follow these steps:
   ```groovy
   dependencies {
       // Your other dependencies...
-      compile 'net.frakbot.glowpadbackport:glowpadbackport:2.1.1'
+      compile 'net.frakbot:glowpadbackport:2.1.1'
   }
   ```
 
