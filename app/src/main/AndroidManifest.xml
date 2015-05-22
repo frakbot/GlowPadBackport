@@ -10,7 +10,7 @@
             android:allowBackup="false">
 
         <activity
-                android:name=".SampleActivity">
+                android:name="net.frakbot.glowpadbackport.sample.SampleActivity">
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>

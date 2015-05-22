@@ -1,13 +1,13 @@
-apply plugin: 'android-library'
-apply from: '../maven_push.gradle'
+apply plugin: 'com.android.library'
+apply plugin: 'bintray-release'
 
 android {
-    compileSdkVersion 19
-    buildToolsVersion "19.0.3"
+    compileSdkVersion 22
+    buildToolsVersion "22.0.1"
 
     defaultConfig {
         minSdkVersion 4
-        targetSdkVersion 19
+        targetSdkVersion 22
 
         versionName VERSION_NAME
         versionCode Integer.parseInt(VERSION_CODE)
@@ -34,14 +34,14 @@ android {
 
     buildTypes {
         release {
-            runProguard false
+            minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), file('proguard-rules.txt')
             signingConfig signingConfigs.release
         }
 
         publicBeta.initWith(buildTypes.release)
         publicBeta {
-            runProguard false
+            minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), file('proguard-rules.txt')
             versionNameSuffix " " + VERSION_BETANUMBER
         }
@@ -49,7 +49,7 @@ android {
         publicDebug.initWith(buildTypes.publicBeta)
         publicDebug {
             debuggable true
-            runProguard false
+            minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), file('proguard-rules.txt')
             versionNameSuffix " Debug " + VERSION_BETANUMBER
         }
@@ -58,4 +58,14 @@ android {
 
 dependencies {
     compile 'com.nineoldandroids:library:2.4.0'
+}
+
+publish {
+    userOrg = POM_DEVELOPER_ID
+    groupId = GROUP_ID
+    artifactId = ARTIFACT_ID
+    publishVersion = VERSION_NAME
+    uploadName = UPLOAD_NAME
+    description = POM_DESCRIPTION
+    website = POM_URL
 }
