@@ -1,1 +1,1 @@
-include ':GlowPadBackport', ':GlowPadBackport-sample'
+include ':lib', ':app'

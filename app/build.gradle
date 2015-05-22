@@ -56,5 +56,5 @@ android {
 }
 
 dependencies {
-    compile project(':GlowPadBackport')
+    compile project(':lib')
 }
