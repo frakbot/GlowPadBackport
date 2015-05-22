@@ -1,4 +1,4 @@
-GlowPadBackport [ ![Download](https://api.bintray.com/packages/bintray/jcenter/net.frakbot.glowpadbackport%3Aglowpadbackport/images/download.svg) ](https://bintray.com/bintray/jcenter/net.frakbot.glowpadbackport%3Aglowpadbackport/_latestVersion)
+GlowPadBackport [ ![Download](https://api.bintray.com/packages/frakbot/maven/GlowPadBackport/images/download.svg) ](https://bintray.com/frakbot/maven/GlowPadBackport/_latestVersion)
 ===============
 
 **A backport of the Android 4.2 GlowPadView that works on the SDK on API levels 4+.**
@@ -25,11 +25,11 @@ I also exposed a couple more functions that aren't available on the AOSP interna
 
 In order to use the `GlowPadView` in your project, follow these steps:
 
-  1. Ensure you have the Maven Central repository configured in your `build.gradle` file, eg.:
+  1. Ensure you have the JCenter repository configured in your `build.gradle` file, eg.:
 
   ```groovy
   repositories {
-      mavenCentral()
+      jcenter()
   }
   ```
   
@@ -40,7 +40,7 @@ In order to use the `GlowPadView` in your project, follow these steps:
   ```groovy
   dependencies {
       // Your other dependencies...
-      compile 'net.frakbot.glowpadbackport:glowpadbackport:2.1.0'
+      compile 'net.frakbot.glowpadbackport:glowpadbackport:2.1.1'
   }
   ```
 
@@ -84,7 +84,7 @@ In order to use the `GlowPadView` in your project, follow these steps:
 
 You can find the `GlowPadSample` app on the [Google Play Store][4].
 
-Please note that **the demo app has not been updated for v2.0** on the Play Store (and probably never will). You can try out the v2.0 demo from the [**Releases** section](https://github.com/frakbot/GlowPadBackport/releases/tag/v2.0.0) of this repo.
+Please note that **the demo app has not been updated for v2.x** on the Play Store (and probably never will). You can try out the v2.x demo from the [**Releases** section](https://github.com/frakbot/GlowPadBackport/releases/tag/v2.1.1) of this repo.
 
 [![GlowPadSample on Google Play Store](http://developer.android.com/images/brand/en_generic_rgb_wo_60.png)][4]
 
@@ -102,7 +102,7 @@ both files, in place of the placeholders, before being able to complete a build.
 
 ## License
 
-    Copyright 2013-4 Sebastiano Poggi
+    Copyright 2015 Frakbot (Sebastiano Poggi and Francesco Pontillo)
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
