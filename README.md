@@ -9,6 +9,8 @@ I'm releasing my own code under the same Apache 2.0 license the underlying Andro
 
 **GlowPadBackport** relies on [`NineOldAndroids`][2], an awesome backport of the Android 3+ Animation APIs made by [Jake Wharton][3].
 
+## Important note
+This library will NOT do anything that is not strictly needed for this to build/work. Since this class has since been removed from AOSP, **this library should be considered DEPRECATED**. No efforts will be put into it, including merging PRs, for anything but very critical issues.
 
 ## What is a GlowPad?
 
@@ -25,11 +27,13 @@ I also exposed a couple more functions that aren't available on the AOSP interna
 
 In order to use the `GlowPadView` in your project, follow these steps:
 
-  1. Ensure you have the JCenter repository configured in your `build.gradle` file, eg.:
+  1. Ensure you have the proper repository configured in your `build.gradle` file, eg.:
 
   ```groovy
   repositories {
-      jcenter()
+    maven {
+      url "http://dl.bintray.com/frakbot/maven" 
+    }
   }
   ```
   
@@ -82,11 +86,9 @@ In order to use the `GlowPadView` in your project, follow these steps:
 
 ## Sample app
 
-You can find the `GlowPadSample` app on the [Google Play Store][4].
+You can find the `GlowPadSample` app in the [**Releases** section](https://github.com/frakbot/GlowPadBackport/releases/tag/v2.1.1) of this repo.
 
-Please note that **the demo app has not been updated for v2.x** on the Play Store (and probably never will). You can try out the v2.x demo from the [**Releases** section](https://github.com/frakbot/GlowPadBackport/releases/tag/v2.1.1) of this repo.
-
-[![GlowPadSample on Google Play Store](http://developer.android.com/images/brand/en_generic_rgb_wo_60.png)][4]
+The app used to be available on the Play Store but has not been updated and has since been pulled.
 
 
 ## Building from source
